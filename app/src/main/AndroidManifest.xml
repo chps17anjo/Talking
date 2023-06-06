@@ -12,9 +12,6 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.Main.MainActivity2"
-            android:exported="false" />
-        <activity
             android:name=".Activity.TelasPrincipais.TelaPrincipal"
             android:exported="false" />
         <activity
