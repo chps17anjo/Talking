@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrond"
+    tools:context=".Activity.TelasPrincipais.Login">
+
+    <TextView
+        android:id="@+id/cadastre_se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+
+        android:text="@string/titulo"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_Login_email"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/drawcaixa_de_texto"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="cursive"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_Login_senha"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/drawcaixa_de_texto"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:drawableLeft="@drawable/baseline_lock_open_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="cursive"
+        android:hint="@string/hintSenha"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ckb_mostrar_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="@color/white"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="25sp"></CheckBox>
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:text="Mostrar senha"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="cursive"
+        android:text="@string/botaoLogin"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_Google"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/googleg_standard_color_18"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bt_Fac"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/facebook"
+
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_Login_cadastrar"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:fontFamily="cursive"
+        android:text="@string/botaoSalvar"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <ProgressBar
+        android:id="@+id/pgb_login"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible"
+
+        ></ProgressBar>
+
+
+</LinearLayout>

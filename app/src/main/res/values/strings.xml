@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TalkingV8</string>
+    <string name="titulo">Talking</string>
+    <string name="hintNome">Nome</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintSenha">Senha</string>
+    <string name="hintComfirmaSenha">Confirmar Senha</string>
+    <string name="botaoSalvar">Cadastra-se</string>
+    <string name="botaoLogin">Acessar</string>
+    <string name="profile">Perfil</string>
+    <string name="home">Inicio</string>
+    <string name="config">Configuração</string>
+    <string name="progresso">Progresso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

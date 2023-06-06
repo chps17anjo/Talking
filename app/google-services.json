@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "56955049974",
+    "project_id": "talkingv8",
+    "storage_bucket": "talkingv8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56955049974:android:7114dae55f4933216259d7",
+        "android_client_info": {
+          "package_name": "com.starkmobiletalking.talkingv8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56955049974-jhc5riicm62af8ba5arn771knnb3r4e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNCPcpK-eXUQHZkLLc15orplWQeKiGds4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56955049974-jhc5riicm62af8ba5arn771knnb3r4e3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrond"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TelasPrincipais.TelaPrincipal">
+
+    <FrameLayout
+        android:id="@+id/container_Principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        tools:layout_editor_absoluteX="16dp">
+        <!---->
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="80dp"
+        android:background="@drawable/background_button"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <Button
+            android:id="@+id/bt_Home"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:background="@drawable/house"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/bt_Perfil"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/bt_Config"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"
+            android:background="@drawable/engrenagem"
+            tools:ignore="MissingConstraints" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

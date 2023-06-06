@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrond"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TelasPrincipais.Spash">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/surdo_removebg_preview__3_" />
+    <TextView
+        android:id="@+id/nomeApp"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="Talking"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_centerHorizontal="true"
+        android:text="Versão  1.0"
+        android:textColor="@color/white" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeApp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
