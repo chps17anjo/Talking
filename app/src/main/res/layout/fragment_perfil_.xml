@@ -7,25 +7,27 @@
     android:background="@drawable/backgrond"
     tools:context=".Activity.TelasFrame.Perfil_Fragment">
 
-    <Button
-        android:id="@+id/bt_img_Perffil"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@drawable/ft"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_voltar_perfil" />
-
-    <ImageView
-        android:id="@+id/img_perfil"
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="75dp"
         android:layout_height="75dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_voltar_perfil"
-        tools:ignore="MissingConstraints"
-        tools:src="@drawable/ft" />
+        tools:ignore="MissingConstraints" />
+
+     />
+    <Button
+        android:id="@+id/bt_img_Perfil"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_voltar_perfil" />
+
+
 
     <Button
         android:id="@+id/bt_voltar_perfil"
@@ -55,7 +57,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_img_Perffil" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_img_Perfil" />
 
     <TextView
         android:id="@+id/edt_Perfil_email"
@@ -77,4 +79,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_Perfil_nome"
         tools:ignore="DuplicateIds" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

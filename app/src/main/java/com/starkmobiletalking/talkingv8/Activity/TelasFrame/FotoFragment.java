@@ -1,5 +1,8 @@
 package com.starkmobiletalking.talkingv8.Activity.TelasFrame;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +12,10 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.squareup.picasso.Picasso;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.squareup.picasso.Target;
 import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.TelaPrincipal;
 import com.starkmobiletalking.talkingv8.R;
 
@@ -23,7 +30,7 @@ public class FotoFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private Button bt_sair_foto;
+    private Button bt_sair_foto,bt_fotoZum;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -66,6 +73,7 @@ public class FotoFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_foto, container, false);
         bt_sair_foto=view.findViewById(R.id.bt_sair_foto);
+        bt_fotoZum=view.findViewById(R.id.bt_fotoZum);
         bt_sair_foto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,5 +86,30 @@ public class FotoFragment extends Fragment {
         Perfil_Fragment fragment= new Perfil_Fragment();
         FragmentManager fragmentManager= getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container_Principal,fragment).commit();
+    }
+    @Override
+    public void onStart(){
+        super.onStart();
+
+         String emailFotoZu= FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl().toString();
+
+
+         Picasso.get().load(emailFotoZu).into(new Target() {
+             @Override
+             public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                 bt_fotoZum.setBackground(new BitmapDrawable(getResources(),bitmap));
+             }
+
+             @Override
+             public void onBitmapFailed(Exception e, Drawable errorDrawable) {
+
+             }
+
+             @Override
+             public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+             }
+         });
+
     }
 }

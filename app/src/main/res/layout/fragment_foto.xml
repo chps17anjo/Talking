@@ -20,10 +20,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_fotoZum"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:background="@drawable/ft"
+        android:background="@null"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
