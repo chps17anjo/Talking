@@ -1,5 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
 
-    <solid android:color="@null" /> <!-- Cor de preenchimento do botão -->
+    <solid android:color="@color/cinza" /> <!-- Cor de preenchimento do botão -->
     <corners android:radius="35dp" /> <!-- Raio dos cantos do botão -->
 </shape>

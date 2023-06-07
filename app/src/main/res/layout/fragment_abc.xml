@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrond"
+    tools:context=".Activity.TelasFrame.AbcFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_A"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+
+            android:text="A" />
+
+        <Button
+            android:id="@+id/bt_B"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/bt_C"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/bt_D"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/bt_E"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/bt_F"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/bt_G"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="G" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_H"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="H" />
+
+        <Button
+            android:id="@+id/bt_I"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/bt_J"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/bt_K"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/bt_L"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/bt_M"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="M" />
+
+        <Button
+            android:id="@+id/bt_N"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="N" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_O"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/bt_P"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/bt_Q"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/bt_R"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/bt_S"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/bt_T"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/bt_U"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="U" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_V"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/bt_W"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/bt_X"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/bt_Y"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/bt_Z"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/redondo_layout"
+            android:fontFamily="cursive"
+            android:text="Z" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

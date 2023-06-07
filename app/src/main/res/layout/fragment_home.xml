@@ -3,6 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backgrond"
     android:layout_height="match_parent"
-    tools:context=".Activity.TelasFrame.HomeFragment"/>
+    android:background="@drawable/backgrond"
+    tools:context=".Activity.TelasFrame.HomeFragment">
+
+    <Button
+        android:id="@+id/bt_Abc"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="255dp"
+        android:background="@drawable/abc"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_Silabas"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="95dp"
+        android:background="@drawable/silabas"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Abc"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
