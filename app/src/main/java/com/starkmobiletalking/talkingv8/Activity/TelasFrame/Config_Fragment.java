@@ -12,10 +12,6 @@ import android.view.*;
 import android.widget.*;
 
 
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.Login;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.Register;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.Spash;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.TelaPrincipal;
 import com.starkmobiletalking.talkingv8.R;
 
 public class Config_Fragment extends Fragment {

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backgrond"
-    tools:context=".Activity.TelasPrincipais.Login">
+    tools:context=".Activity.TelasPrincipais.Login_activity">
 
     <TextView
         android:id="@+id/cadastre_se"

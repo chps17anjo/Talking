@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/backgrond"
     android:layout_height="match_parent"
-    tools:context=".Activity.TelasPrincipais.TelaPrincipal">
+    tools:context=".Activity.TelasPrincipais.TelaPrincipal_activity">
 
     <FrameLayout
         android:id="@+id/container_Principal"

@@ -10,7 +10,7 @@ import com.starkmobiletalking.talkingv8.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Spash extends AppCompatActivity {
+public class Spash_activity extends AppCompatActivity {
     private final Timer timer = new Timer();
     TimerTask timerTask;
     @Override
@@ -32,7 +32,7 @@ public class Spash extends AppCompatActivity {
         timer.schedule(timerTask,1000);
     }
     private void gotomainActivict() {
-        Intent intent= new Intent(Spash.this,Login.class);
+        Intent intent= new Intent(Spash_activity.this, Login_activity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();

@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.Login;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.TelaPrincipal;
+import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.Login_activity;
+import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.TelaPrincipal_activity;
 import com.starkmobiletalking.talkingv8.R;
 
 
@@ -27,13 +27,14 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentuser= FirebaseAuth.getInstance().getCurrentUser();
 
         if(currentuser== null){
-            Intent intent= new Intent(MainActivity.this, Login.class);
+            Intent intent= new Intent(MainActivity.this, Login_activity.class);
             startActivity(intent);
             finish();
         }else{
-            Intent intent= new Intent(MainActivity.this, TelaPrincipal.class);
+            Intent intent= new Intent(MainActivity.this, TelaPrincipal_activity.class);
             startActivity(intent);
             finish();
         }
     }
+
 }

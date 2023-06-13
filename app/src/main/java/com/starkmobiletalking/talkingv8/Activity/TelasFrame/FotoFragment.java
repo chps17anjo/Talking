@@ -16,7 +16,6 @@ import com.squareup.picasso.Picasso;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Target;
-import com.starkmobiletalking.talkingv8.Activity.TelasPrincipais.TelaPrincipal;
 import com.starkmobiletalking.talkingv8.R;
 
 /**
@@ -77,12 +76,12 @@ public class FotoFragment extends Fragment {
         bt_sair_foto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                usarPerfil();
+                sairPerfil();
             }
         });
     return view;}
 
-    private void usarPerfil() {
+    private void sairPerfil() {
         Perfil_Fragment fragment= new Perfil_Fragment();
         FragmentManager fragmentManager= getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container_Principal,fragment).commit();

@@ -27,7 +27,7 @@ import com.starkmobiletalking.talkingv8.Activity.Main.MainActivity;
 import com.starkmobiletalking.talkingv8.Model.UserModel;
 import com.starkmobiletalking.talkingv8.R;
 
-public class Register extends AppCompatActivity {
+public class Register_activity extends AppCompatActivity {
     private EditText edt_Register_email,edt_Register_senha,edt_Register_senha_confirma,
     edt_Register_nome,edt_Register_sobreNome;
     private CheckBox ckb_mostrar_senha_register;
@@ -102,18 +102,18 @@ public class Register extends AppCompatActivity {
                                         error= "Erro ao efeituar o cadastro";
                                         e.printStackTrace();
                                     }
-                                    Toast.makeText(Register.this, error, Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Register_activity.this, error, Toast.LENGTH_SHORT).show();
 
                                     pgb_Register.setVisibility(View.INVISIBLE);
                                 }
                             }
                         });
                     }else{
-                        Toast.makeText(Register.this, "A senha deve ser a mesma em ambos os campos!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register_activity.this, "A senha deve ser a mesma em ambos os campos!", Toast.LENGTH_SHORT).show();
                     }
 
                 }else{
-                    Toast.makeText(Register.this, "preencha todos os campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register_activity.this, "preencha todos os campos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -121,7 +121,7 @@ public class Register extends AppCompatActivity {
         bt_Register_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(Register.this,Login.class);
+                Intent intent= new Intent(Register_activity.this, Login_activity.class);
                 startActivity(intent);
                 finish();
             }
@@ -129,7 +129,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal() {
-        Intent intent= new Intent(Register.this, MainActivity.class);
+        Intent intent= new Intent(Register_activity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }

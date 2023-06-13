@@ -1,21 +1,18 @@
 package com.starkmobiletalking.talkingv8.Activity.TelasFrame;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.starkmobiletalking.talkingv8.Activity.Main.MainActivity;
 import com.starkmobiletalking.talkingv8.R;
-import com.starkmobiletalking.talkingv8.Activity.TelasFrame.AbcFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -77,9 +74,14 @@ public class AbcFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if(bt_A.getText().equals("A")){
-                   // Toast.makeText(getContext(), "|"+bt_A.getText()+"|77", Toast.LENGTH_SHORT).show();
+                  //Toast.makeText(getContext(), "|"+bt_A.getText()+"|77", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getContext(), TelaPrincipalAlfabertoActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+
+
                 }else{
-                    Toast.makeText(getContext(), "|"+bt_A.getText()+"|88", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), "|"+bt_A.getText()+"|88", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -87,10 +89,7 @@ public class AbcFragment extends Fragment {
 
     return  view;}
 
-    public void meuMetodo() {
 
-        Toast.makeText(getContext(), "|"+bt_A.getText()+"|844", Toast.LENGTH_SHORT).show();
-    }
 
 
 

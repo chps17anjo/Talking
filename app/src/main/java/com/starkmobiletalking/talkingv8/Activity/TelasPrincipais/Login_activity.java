@@ -33,7 +33,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import com.starkmobiletalking.talkingv8.R;
 
 
-public class Login extends AppCompatActivity {
+public class Login_activity extends AppCompatActivity {
     private EditText edt_Login_email,edt_Login_senha,Cadastre_se;
     private TextView cadastre_se;
     private Button bt_Login,bt_Login_cadastrar,bt_Google,bt_Fac;
@@ -90,14 +90,14 @@ public class Login extends AppCompatActivity {
                                 abrirTelaPrincipal();
                             }else{
                                 String error = task.getException().getMessage();
-                                Toast.makeText(Login.this,""+error,Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login_activity.this,""+error,Toast.LENGTH_SHORT).show();
                                 pgb_login.setVisibility(View.INVISIBLE);
                                 
                             }
                         }
                     });
                 }else{
-                    Toast.makeText(Login.this, "preencha todos os campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login_activity.this, "preencha todos os campos", Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -105,7 +105,7 @@ public class Login extends AppCompatActivity {
         bt_Login_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(Login.this,Register.class);
+                Intent intent= new Intent(Login_activity.this, Register_activity.class);
                 startActivity(intent);
                 finish();
             }
@@ -145,7 +145,7 @@ public class Login extends AppCompatActivity {
                                 if(task.isSuccessful()){
                                     abrirTelaPrincipal();
                                 }else{
-                                    Toast.makeText(Login.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login_activity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
@@ -165,7 +165,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal() {
-        Intent intent= new Intent(Login.this, TelaPrincipal.class);
+        Intent intent= new Intent(Login_activity.this, TelaPrincipal_activity.class);
         startActivity(intent);
 
     }}

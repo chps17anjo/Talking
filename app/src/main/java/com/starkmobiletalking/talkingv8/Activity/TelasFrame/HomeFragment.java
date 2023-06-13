@@ -91,12 +91,12 @@ public class HomeFragment extends Fragment {
        AbcFragment fragment= new AbcFragment();
         FragmentManager fragmentManager= getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container_Principal,fragment).commit();
-        Toast.makeText(getContext(), "asdad", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getContext(), "asdad", Toast.LENGTH_SHORT).show();
     }
     private void chamarFragSilabas() {
         SilabasFragment fragment= new SilabasFragment();
         FragmentManager fragmentManager= getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container_Principal,fragment).commit();
-        Toast.makeText(getContext(), "asdasssssd", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getContext(), "asdasssssd", Toast.LENGTH_SHORT).show();
     }
 }

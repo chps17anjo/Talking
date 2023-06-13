@@ -14,7 +14,7 @@ import com.starkmobiletalking.talkingv8.Activity.TelasFrame.HomeFragment;
 import com.starkmobiletalking.talkingv8.Activity.TelasFrame.Perfil_Fragment;
 import com.starkmobiletalking.talkingv8.R;
 
-public class TelaPrincipal extends AppCompatActivity {
+public class TelaPrincipal_activity extends AppCompatActivity {
     private Button bt_Home,bt_Perfil,bt_Config;
 
 
@@ -64,7 +64,7 @@ public class TelaPrincipal extends AppCompatActivity {
 
     }
     private void abrirTelaPrincipal() {
-        Intent intent= new Intent(TelaPrincipal.this, Register.class);
+        Intent intent= new Intent(TelaPrincipal_activity.this, Register_activity.class);
         startActivity(intent);
 
     }
