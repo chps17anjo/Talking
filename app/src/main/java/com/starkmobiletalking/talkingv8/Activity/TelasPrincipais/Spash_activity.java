@@ -30,6 +30,7 @@ public class Spash_activity extends AppCompatActivity {
             }
         };
         timer.schedule(timerTask,1000);
+        //return false;
     }
     private void gotomainActivict() {
         Intent intent= new Intent(Spash_activity.this, Login_activity.class);

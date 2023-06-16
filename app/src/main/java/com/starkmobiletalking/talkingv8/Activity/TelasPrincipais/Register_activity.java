@@ -126,6 +126,7 @@ public class Register_activity extends AppCompatActivity {
                 finish();
             }
         });
+        //return false;
     }
 
     private void abrirTelaPrincipal() {

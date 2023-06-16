@@ -6,12 +6,15 @@ import androidx.fragment.app.FragmentManager;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.starkmobiletalking.talkingv8.Activity.TelasFrame.Config_Fragment;
 import com.starkmobiletalking.talkingv8.Activity.TelasFrame.HomeFragment;
 import com.starkmobiletalking.talkingv8.Activity.TelasFrame.Perfil_Fragment;
+import com.starkmobiletalking.talkingv8.Activity.TelasFrame.TelaPrincipalAlfabertoActivity;
 import com.starkmobiletalking.talkingv8.R;
 
 public class TelaPrincipal_activity extends AppCompatActivity {
@@ -27,6 +30,7 @@ public class TelaPrincipal_activity extends AppCompatActivity {
         bt_Perfil= findViewById(R.id.bt_Perfil);
         bt_Config= findViewById(R.id.bt_Config);
 
+
         bt_Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {usarHome();}
@@ -39,6 +43,7 @@ public class TelaPrincipal_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {usarConfig();}
         });
+        //return false;
     }
     private void usarHome() {
         HomeFragment fragment= new HomeFragment();
@@ -56,7 +61,7 @@ public class TelaPrincipal_activity extends AppCompatActivity {
         fragmentManager.beginTransaction().replace(R.id.container_Principal,fragment).commit();
     }
     @Override
-    protected void onStart(){
+    public void onStart(){
         super.onStart();
         HomeFragment fragment= new HomeFragment();
         FragmentManager fragmentManager= getSupportFragmentManager();
